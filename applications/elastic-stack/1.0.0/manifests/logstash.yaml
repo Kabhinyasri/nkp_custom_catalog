@@ -1,0 +1,28 @@
+apiVersion: logstash.k8s.elastic.co/v1alpha1
+kind: Logstash
+metadata:
+  name: elk-logstash
+  namespace: elastic-system
+spec:
+  count: 1
+  version: 8.13.0
+  elasticsearchRefs:
+    - name: elk-cluster
+      clusterName: es
+  pipelines:
+    - pipeline.id: main
+      config.string: |
+        input {
+          http {
+            port => 8080
+          }
+        }
+        output {
+          elasticsearch {
+            hosts => [ "${ES_ES_HOSTS}" ]
+            user => "${ES_ES_USER}"
+            password => "${ES_ES_PASSWORD}"
+            ssl_certificate_authorities => "${ES_ES_SSL_CERTIFICATE_AUTHORITY}"
+          }
+          stdout { codec => rubydebug }
+        }

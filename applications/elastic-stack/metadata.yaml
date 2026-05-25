@@ -1,0 +1,9 @@
+schema: catalog.nkp.nutanix.com/v1/application-metadata
+displayName: Elastic Stack
+description: Open Source Application Integration (GitOps)
+allowMultipleInstances: false
+category:
+  - database
+scope:
+  - workspace
+icon: PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PHBhdGggZmlsbD0iIzAwYmZiMyIgZD0iTTE2IDE2bS0xNiAwYTE2IDE2IDAgMSAwIDMyIDBhMTYgMTYgMCAxIDAtMzIgMHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIuNSAxM2g3LjN2MS43aC03LjN6TTEyLjUgMTcuM2g3LjN2MS43aC03LjN6TTEyLjUgMTUuMWg1Ljh2MS43aC01Ljh6Ii8+PC9zdmc+

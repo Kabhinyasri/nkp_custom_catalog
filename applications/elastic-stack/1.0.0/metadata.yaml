@@ -1,0 +1,8 @@
+schema: catalog.nkp.nutanix.com/v1/application-metadata
+displayName: Elastic Stack
+description: Open Source Application Integration (ECK Operator)
+allowMultipleInstances: false
+category:
+  - general
+scope:
+  - workspace
